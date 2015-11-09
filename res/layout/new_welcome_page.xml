@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff009b00" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.1">
+        <ImageView android:id="@+id/mylogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sss" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.9">
+        <RelativeLayout android:id="@+id/layout_about_container" android:background="#ffefefef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginBottom="-120.0dip">
+            <View android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentTop="true" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+                 <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="100.0dip" android:src="@drawable/tip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="#ff009b00" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <LinearLayout android:background="#ff009b00" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+         <WebView
+        
+        	android:id="@+id/install_web"
+       		android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:visibility="invisible"/>
+         <WebView
+        
+        	android:id="@+id/statics_web"
+       		android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:visibility="invisible"/>
+    </LinearLayout>
+</LinearLayout>
